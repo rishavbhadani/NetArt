@@ -1,0 +1,127 @@
+/* Header */
+.header {
+    background-color: #fff5ee;
+    padding: 20px;
+    text-align: center;
+}
+
+.header img {
+    max-width: 30%; /* Adjust image width */
+}
+
+/* Middle Part */
+.middle-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    background: linear-gradient(to bottom, #fff5ee 30%, #f5f5dc 70%);
+}
+
+.left-side, .right-side {
+    flex-basis: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px;
+    text-align: center; /* Center align text */
+}
+
+.left-side img {
+    max-width: 60%;
+    padding-left: 200px;
+    
+}
+
+.right-side img {
+    max-width: 100%
+    
+    
+}
+.left-side h2, 
+.left-side p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: inherit; /* Inherit font size */
+
+}
+
+.left-side h2, .left-side p,
+.right-side h2, .right-side p {
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.right-side h2 {
+    font-size: 40.5px; /* Adjust as needed */
+}
+
+.right-side p {
+    font-size: 30.2px; /* Adjust as needed */
+}
+
+.right-side p1 {
+    font-weight: bold;
+}
+.bottom-side{
+    text-align: center;
+    
+}
+.bottom-side img{
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.bottom-side p{
+    text-align: center;
+    font-size:32.2px ;
+    
+    
+    font-weight: 500;
+}
+.red-line {
+    border-top: 3px solid rgb(242, 47, 47); 
+    margin: 20px 0; 
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(242, 47, 47) !important;
+    padding: 5% 10%; /* Adjust padding */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info img{
+    max-width: 10%;
+    background-color: white;
+}
+.social-media img{
+    max-width: 3.5%;
+}
+.website img{
+    max-width: 10%;
+}
+
+.contact-info a, .social-media a, .website a {
+    color: white;
+    font-size: 30px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) {
+    /* Adjust styles for small mobile devices */
+    .left-side, .right-side {
+        flex-basis: 100%; /* Full width for small screens */
+    }
+
+    /* Additional adjustments as needed */
+}
+
+@media screen and (min-width: 768px) {
+    /* Adjust styles for tablets and larger screens */
+    .left-side, .right-side {
+        flex-basis: calc(50% - 5px); /* Adjust as needed */
+    }
+
+    /* Additional adjustments as needed */
+}
